@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elinditaly | Elettronica Industriale</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <!-- header section starts  -->
+
+    <section class="header">
+        <div class="flex">
+            <a href="#home" class="logo">Logo</a>
+            <a href="#availability" class="btn" id="openModal">guarda il video</a>
+
+            <!-- Modal Structure -->
+
+            <div id="videoModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="video-container">
+                        <video id="video" width="560" height="315" controls>
+                            <source src="images/2017-05-06 ELIND new edition_ORIGINAL_DOWNLOAD.mp4" type="video/mp4">
+                            Il tuo browser non supporta il tag video.
+                        </video>
+                        <div class="video-overlay" id="videoOverlay">Clicca per avviare il video</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="progettazione.html">Progettazione</a>
+            <a href="produzione.html">Produzione</a>
+            <a href="assistenza.html">Assistenza</a>
+            <a href="lavoraconnoi.html">Lavora Con Noi</a>
+            <a href="news.html">News</a>
+            <a href="contatti.html">Contatti</a>
+        </nav>
+    </section>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+
+                <div class="box swiper-slide">
+                    <img src="./images/immagine1.jpg" alt="">
+                    <div class="flex">
+                        <p>Soluzioni Tecnologiche Personalizzate Al Servizio Del
+                            Mondo Della Siderurgia E Della Metallurgia</p>
+                    </div>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="./images/immagine2.jpg" alt="">
+                    <div class="flex">
+                        <p>Soluzioni Tecnologiche Personalizzate Al Servizio Del
+                            Mondo Della Siderurgia E Della Metallurgia</p>
+                    </div>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="./images/immagine3.jpg" alt="">
+                    <div class="flex">
+                        <p>Soluzioni Tecnologiche Personalizzate Al Servizio Del
+                            Mondo Della Siderurgia E Della Metallurgia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <h1 class="main_headingone">Chi Siamo</h1>
+
+    <section class="container" id="home">
+        <div class="row">
+            <div class="col-lg-6 chisiamo ms-5">
+                <h1 class="titlechisiamo">Soluzioni personalizzate all’insegna dell’innovazione</h1>
+                <p class="testochisiamo">ELIND è un’azienda italiana, leader nella progettazione e produzione di
+                    impianti completi di riscaldo a induzione elettromagnetica “chiavi in mano”,
+                    che trovano applicazione in ambito siderurgico, per la produzione e il
+                    trattamento termico di barre e tubi in acciaio, oppure nella forgiatura dei
+                    metalli. <br>
+                    ELIND dunque rappresenta un affidabile interlocutore a livello internazionale,
+                    per acciaierie, tubifici e società di stampaggio a caldo.
+                    Fondata nel 1969, ELIND inizia l’attività con la costruzione di convertitori
+                    di media frequenza per il riscaldo a induzione di billette e barre, per
+                    successivo processo di forgiatura. <br>
+                    Nel 1998 diventa Società per Azioni e nel 2000 ottiene la certificazione di
+                    qualità ISO9001. <br>
+                    Nel 2011 viene inaugurata la nuova sede operativa, su una superficie di oltre
+                    3.000 metri quadrati in Venaria Reale (TO). <br>
+                    Nel corso della sua storia ELIND ha realizzato oltre 1.500 impianti in 30
+                    diversi Paesi nel mondo, con potenze installate fino a 28 Megawatt, ampliando
+                    progressivamente il proprio raggio d’azione dall’Europa all’America fino ai
+                    mercati del Far East e dell’Australia.
+                    Grazie a un continuo processo di innovazione tecnologica ed alla collaborazione
+                    con importanti gruppi industriali, l’azienda ha saputo estendere i settori di
+                    applicazione ed in sinergia con società internazionali di engineering ha
+                    contribuito alla realizzazione di impianti integrati di indubbia rilevanza. <br>
+                    ELIND vanta anche uno staff altamente specializzato, risultato di un rigoroso
+                    e continuo processo di formazione, ed una rete commerciale qualificata ed
+                    internazionale, costituita da una selezionata rete di agenti e collaboratori. <br><br>
+                    La Nostra Politica Della Qualità: <a href="./images/elind_politica_della_qualita.pdf"
+                        target="_blank" style="color: #FF5733">Leggi</a><br><br>
+                    Il Nostro Codice Etico: <a href="./images/CODICE-ETICO.pdf" target="_blank" style="color: #FF5733">
+                        Leggi</a><br><br>
+                    La Nostra Politica Di Etichettatura: <a href="./images/Etichettatura-Imballaggi-ELIND.pdf"
+                        target="_blank" style="color: #FF5733">Leggi </a><br><br>
+                    Il Nostro Certificato Di Sostenibilità: <a
+                        href="./images/SurveyCertificate_ELIND-SPA_15_04_2024.png" target="_blank"
+                        style="color: #FF5733">Visualizza</a>
+                </p>
+            </div>
+            <div class="col-lg-6 image-column">
+                <img src="./images/chisiamo.png" alt="Foto chi siamo">
+                <img src="./images/ISO9001.png" alt="logo ISO 9001" class="small-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- la nostra storia -->
+
+    <div class="container-fluid my-5">
+        <div class="row text-center">
+            <h1 class="main_headingtwo">La Nostra Storia e...</h1>
+            <div class="box-container d-flex justify-content-center flex-wrap">
+                <div class="box m-3 p-3 border border-primary rounded">
+                    <h3>1968</h3>
+                    <p>Anno Di <br> Fondazione</p>
+                </div>
+                <div class="box m-3 p-3 border border-primary rounded">
+                    <h3>1998</h3>
+                    <p>Elind Diventa <br> Società per Azioni</p>
+                </div>
+                <div class="box m-3 p-3 border border-primary rounded">
+                    <h3>2000</h3>
+                    <p>Prima Certificazione <br> ISO 9001</p>
+                </div>
+                <div class="box m-3 p-3 border border-primary rounded">
+                    <h3>2011</h3>
+                    <p>Inaugurazione Della <br> Nuova Sede Operativa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="main_headingthree">... La Nostra Mission</h1>
+
+
+    <section class="container" id="home">
+        <div class="row">
+            <div class="col-lg-6 image-column">
+                <img src="./images/lanostramission.jpg" alt="La nostra mission" class="mission">
+            </div>
+            <div class="col-lg-6 chisiamoone ms-5">
+                <p class="testochisiamo">
+                    Dal 1968 vogliamo essere un punto di riferimento <br> a livello globale nella realizzazione di
+                    impianti di
+                    riscaldo a induzione per acciaierie e società di stampaggio a caldo. <br><br> Lavoriamo in tutto il
+                    mondo collaborando con grandi gruppi
+                    industriali, sviluppando progetti che coniugano efficienza,
+                    sostenibilità e innovazione tecnologica. <br><br> Seguiamo i clienti in tutte
+                    le fasi, dalla progettazione all’assistenza post vendita, offrendo
+                    competenza e rapidità di servizio in tutto il mondo. <br><br> Ricerca e sviluppo,
+                    attenzione al mercato e uno staff altamente specializzato sono i punti
+                    di forza che ci guidano da sempre verso il futuro.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="home">
+        <div class="row">
+            <div class="col-lg-6 chisiamo ms-5">
+                <h1 class="titlechisiamo">Ricerca & Sviluppo</h1>
+                <p class="testochisiamo">L’innovazione tecnologica è un elemento centrale della vision
+                    dell’azienda. <br><br>
+                    ELIND investe risorse importanti in ricerca & sviluppo e dispone di una unità
+                    interna ad essa dedicata, che sviluppa continui aggiornamenti tecnici sui propri
+                    impianti. <br><br> Grazie agli sforzi fatti in questa direzione, nel corso degli
+                    anni sono state lanciate soluzioni innovative sul mercato, come gli
+                    impianti con tecnologia a IGBT, e coperto nuovi campi di <br> applicazione, come
+                    la ricottura in atmosfera controllata di tubi in acciaio inossidabile. <br><br>
+                    Nell’ottica di offrire al mercato soluzioni sempre all’avanguardia e di garantire
+                    una adeguata formazione del proprio personale, ELIND collabora con numerose scuole
+                    ed università, italiane ed europee e con diversi centri di ricerca.
+                    Un esempio significativo in questa direzione è rappresentato dalla nuova
+                    generazione di convertitori di frequenza, sviluppata da Elind in collaborazione
+                    con il <br> DET-Politecnico di Torino, in grado di assicurare elevata efficienza energetica e di
+                    garantire assoluti vantaggi in termini di semplicità di uso e manutenzione.
+                </p>
+            </div>
+            <div class="col-lg-6 image-column">
+                <img src="./images/lanostrastoria.png" alt="Foto chi siamo" class="nostrastoria">
+            </div>
+        </div>
+    </section>
+
+    <!-- servizi -->
+
+    <div class="container-service" id="menu">
+        <h1 class="main_heading">I Nostri Servizi</h1>
+        <section class="about-us">
+            <div class="services">
+                <div class="service">
+                    <div class="service-header cont_box menu_box">
+                        <img src="./images/worker_1608528.png" alt="" class="icona">
+                        <h2 class="cont_heading">Progettazione</h2>
+                    </div>
+                    <p class="cont_des">
+                        Un Team Altamente Specializzato e Una Costante Attenzione All'Innovazione
+                        Tecnologica
+                    </p>
+                    <p class="cont_leggi"><a href="progettazione.html" style="color: #FF5733">Leggi</a></p>
+                </div>
+                <div class="service">
+                    <div class="service-header cont_box menu_box">
+                        <img src="./images/working-woman_2098208.png" alt="" class="icona">
+                        <h2 class="cont_heading">Assistenza</h2>
+                    </div>
+                    <p class="cont_des">
+                        Un Team Altamente Specializzato e Una Costante Attenzione All'Innovazione
+                        Tecnologica
+                    </p>
+                    <p class="cont_leggi"><a href="assistenza.html" style="color: #FF5733">Leggi</a></p>
+                </div>
+                <div class="service">
+                    <div class="service-header cont_box menu_box">
+                        <img src="./images/news_4542142.png" alt="" class="icona">
+                        <h2 class="cont_heading">News</h2>
+                    </div>
+                    <p class="cont_des">
+                        Le Più Interessanti News Sulla Nostra Azienda Le Trovate Qui
+                    </p>
+                    <p class="cont_leggi"><a href="news.html" style="color: #FF5733">Leggi</a></p>
+                </div>
+                <div class="service">
+                    <div class="service-header cont_box menu_box">
+                        <img src="./images/efficiency_14108770.png" alt="" class="icona">
+                        <h2 class="cont_heading">Produzione</h2>
+                    </div>
+                    <p class="cont_des">
+                        Realizzazione Di Impianti Chiavi In Mano Per Soddisfare In Modo Puntuale Le
+                        Esigenze Dei Clienti
+                    </p>
+                    <p class="cont_leggi"><a href="produzione.html" style="color: #FF5733">Leggi</a></p>
+                </div>
+                <div class="service">
+                    <div class="service-header cont_box menu_box">
+                        <img src="./images/team_1260917.png" alt="" class="icona">
+                        <h2 class="cont_heading">Lavora Con Noi</h2>
+                    </div>
+                    <p class="cont_des">
+                        Siamo Costantemente Alla Ricerca Di Nuove Figure Per Potenziare La Nostra
+                        Struttura Organizzativa
+                    </p>
+                    <p class="cont_leggi"><a href="lavoraconnoi.html" style="color: #FF5733">Leggi</a></p>
+                </div>
+                <div class="service">
+                    <div class="service-header cont_box menu_box">
+                        <img src="./images/contact_2967892.png" alt="" class="icona">
+                        <h2 class="cont_heading">Contatti</h2>
+                    </div>
+                    <p class="cont_des">
+                        La Mappa E Tutti i Nostri Indirizzi Per Mettervi In
+                        Contatto Con Noi
+                    </p>
+                    <p class="cont_leggi"><a href="contatti.html" style="color: #FF5733">Leggi</a></p>
+                </div>
+                <div class="about-us-img-wrapper">
+                    <img src="images/mec.png" class="mec" />
+                </div>
+            </div>
+        </section>
+
+        <!-- numscroller -->
+
+        <h1 class="main_headingfour">I Numeri del Nostro Successo</h1>
+        <section class="facts section-py">
+            <div class="container">
+                <div class="fact-wrapper">
+                    <div class="single-data">
+                        <span class='numscroller' data-min='1' data-max='30' data-delay='20' data-increment='1'>0</span>
+                        <span class="numscroller-text">Paesi in cui Opera L'Azienda</span>
+                    </div>
+                    <div class="single-data">
+                        <span class='numscroller' data-min='1' data-max='56' data-delay='20' data-increment='1'>0</span>
+                        <span class="numscroller-text">Anni d'Esperienza</span>
+                    </div>
+                    <div class="single-data">
+                        <span class="numscroller-text">Oltre</span>
+                        <span class='numscroller' data-min='1' data-max='1600' data-delay='20'
+                            data-increment='20'>0</span>
+                        <span class="numscroller-text">Impianti Realizzati</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section start -->
+
+        <div class="container my-5">
+            <h1 class="text-center mb-4 main_headingsix">Dove Siamo</h1>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 boxx">
+                    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2815.
+            414889757997!2d7.643792975653827!3d45.11792775647674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+            1!3m3!1m2!1s0x47886c206f7980ad%3A0xf971e4369dc9bf!2sViale%20delle%20Industrie%2C%2017%2C%
+            2010078%20Venaria%20Reale%20TO!5e0!3m2!1sen!2sit!4v1718232204153!5m2!1sen!2sit" width="600" height="450"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section start -->
+
+        <section class="footer bg-dark text-light py-5">
+            <div class="container box-container">
+                <div class="row boxone">
+                    <div class="col-12 col-md-4 mb-4">
+                        <p>ELIND Spa</p>
+                        <p class="text"><i class="fas fa-map-marker-alt"></i>Sede Legale</p>
+                        <p class="textsimple">Viale delle Industrie 17</p>
+                        <p class="textsimple">10078 Venaria Reale (TO)</p>
+                        <p class="text"><i class="fas fa-map-marker-alt"></i>Uffici</p>
+                        <p class="textsimple">Via Volontari della Libertà 1</p>
+                        <p class="textsimple">22036 Erba (CO)</p>
+                        <p class="textsimple"><i class="fas fa-envelope"></i>info@elinditaly.com</p>
+                        <p class="textsimple"><i class="fas fa-phone"></i>+39 011-95.72.432</p>
+                        <p class="textsimple"><i class="fas fa-fax"></i>+39 011-95.72.502</p>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4 boxone">
+                        <p>Amministrazione</p>
+                        <p class="textsimple"><i class="fas fa-envelope"></i> administration@elinditaly.com</p><br><br>
+                        <p>Ufficio Commerciale</p>
+                        <p class="textsimple"><i class="fas fa-envelope"></i> sales@elinditaly.com</p><br><br>
+                        <p>Assistenza</p>
+                        <p class="textsimple"><i class="fas fa-envelope"></i> aftersales@elinditaly.com</p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center mb-4 boxone">
+                        <a href="index.html">Home</a>
+                        <a href="progettazione.html">Progettazione</a>
+                        <a href="produzione.html">Produzione</a>
+                        <a href="assistenza.html">Assistenza</a>
+                        <a href="lavoraconnoi.html">Lavora con Noi</a>
+                        <a href="news.html">News</a>
+                        <a href="contatti.html">Contatti</a>
+                    </div>
+                </div>
+            </div>
+
+
+    <!--
+    <div class="text-center mt-4">
+        &copy; copyright 2024 by <a href="https://www.pixelpro.cloud" target="_blank" class="text-primary">pixelpro</a> | all rights reserved!
+    </div>
+    -->
+        </section>
+
+
+
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+
+        <!-- Includi jQuery (necessario per alcune funzionalità di Bootstrap) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <!-- Includi Popper.js (necessario per alcune funzionalità di Bootstrap) -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <!-- Includi il file JavaScript di Bootstrap -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

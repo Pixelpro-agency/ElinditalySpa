@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elinditaly | Elettronica Industriale</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <!-- header section starts  -->
+
+    <section class="header">
+        <div class="flex">
+            <a href="#home" class="logo">Logo</a>
+
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="progettazione.html">Progettazione</a>
+            <a href="produzione.html">Produzione</a>
+            <a href="assistenza.html">Assistenza</a>
+            <a href="lavoraconnoi.html">Lavora Con Noi</a>
+            <a href="news.html">News</a>
+            <a href="contatti.html">Contatti</a>
+        </nav>
+    </section>
+
+    <div class="container text-center my-4">
+        <img src="./images/immagine3.jpg" alt="Immagine Assistenza" class="img-fluid immagine_assistenza">
+    </div>
+
+    <section class="about" id="about">
+        <div class="container">
+
+            <div class="row align-items-center my-5 flex-md row-revers">
+                <div class="col-12 col-md-10 col-lg-6 mx-auto d-flex justify-content-center align-items-center">
+                    <img src="images/News_14.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="content col-12 col-md-10 col-lg-6 mx-auto">
+                    <h3 id="termica">Assistenza</h3>
+                    <p class="testolavora">La crescita e la competitività sono possibili solo attraverso una costante attenzione alle
+                        esigenze del cliente e all’innovazione tecnologica. <br><br>
+                        È questa la filosofia che da sempre guida Elind verso il futuro. Con questo spirito i progetti
+                        sviluppati dall’azienda non si esauriscono con la definizione del processo produttivo. <br><br>
+                        I servizi di assistenza Elind comprendono la fase di installazione degli impianti e gli
+                        interventi post vendita. La rete di tecnici altamente qualificati dell’azienda, attiva in Italia
+                        ed in tutto il mondo, assicura interventi rapidi e risolutivi.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row align-items-center my-5">
+                <div class="col-12 col-md-10 col-lg-6 mx-auto d-flex justify-content-center align-items-center">
+                    <img src="images/News_14.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="content col-12 col-md-10 col-lg-6 mx-auto">
+                    <h3 id="tecnica">Vantaggi</h3>
+                    <ul>
+                        <li>Intervento tecnico entro 48 ore dalla chiamata</li>
+                        <li>Assistenza su componentistica obsoleta e fuori produzione</li>
+                        <li>Sistema di teleassistenza installato su tutti gli impianti</li>
+                        <li>Ampio magazzino ricambi</li>
+                        <li>Assistenza in tutto il mondo</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <h1 class="main_headingfour">I Numeri del Nostro Successo</h1>
+    <section class="facts section-py">
+        <div class="container">
+            <div class="fact-wrapper">
+                <div class="single-data">
+                    <span class="numscroller-text">Risorse Dedicate</span>
+                    <span class='numscroller' data-min='1' data-max='15' data-delay='20' data-increment='1'
+                        data-suffix='%'>0</span>
+                    <span class="numscroller-text">del Personale Aziendale</span>
+                </div>
+                <div class="single-data">
+                    <span class="numscroller-text">Massima Attesa</span>
+                    <span class='numscroller' data-min='1' data-max='48' data-delay='20' data-increment='1'>0</span>
+                    <span class="numscroller-text">Ore</span>
+                </div>
+                <div class="single-data">
+                    <span class="numscroller-text">Oltre</span>
+                    <span class='numscroller' data-min='1' data-max='30' data-delay='20' data-increment='1'>0</span>
+                    <span class="numscroller-text">Paesi di Intervento</span>
+                </div>
+                <div class="single-data">
+                    <span class="numscroller-text">Oltre</span>
+                    <span class='numscroller' data-min='1' data-max='1600' data-delay='20' data-increment='18'>0</span>
+                    <span class="numscroller-text">Impianti di Assistenza</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const counters = document.querySelectorAll('.numscroller');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const max = +counter.getAttribute('data-max');
+                        const increment = +counter.getAttribute('data-increment');
+                        const delay = +counter.getAttribute('data-delay');
+                        const suffix = counter.getAttribute('data-suffix') || '';
+
+                        let currentValue = +counter.innerText;
+
+                        const updateCounter = () => {
+                            if (currentValue < max) {
+                                currentValue += increment;
+                                counter.innerText = Math.min(currentValue, max) + suffix;
+                                setTimeout(updateCounter, delay);
+                            } else {
+                                counter.innerText = max + suffix; // Ensure the final value includes the suffix
+                            }
+                        };
+
+                        updateCounter();
+                        observer.unobserve(counter);
+                    }
+                });
+            });
+
+            counters.forEach(counter => {
+                observer.observe(counter);
+            });
+        });
+    </script>
+
+    <!-- Footer section start -->
+
+    <section class="footer bg-dark text-light py-5">
+        <div class="container box-container">
+            <div class="row boxone">
+                <div class="col-12 col-md-4 mb-4">
+                    <p>ELIND Spa</p>
+                    <p class="text"><i class="fas fa-map-marker-alt"></i>Sede Legale</p>
+                    <p class="textsimple">Viale delle Industrie 17</p>
+                    <p class="textsimple">10078 Venaria Reale (TO)</p>
+                    <p class="text"><i class="fas fa-map-marker-alt"></i>Uffici</p>
+                    <p class="textsimple">Via Volontari della Libertà 1</p>
+                    <p class="textsimple">22036 Erba (CO)</p>
+                    <p class="textsimple"><i class="fas fa-envelope"></i>info@elinditaly.com</p>
+                    <p class="textsimple"><i class="fas fa-phone"></i>+39 011-95.72.432</p>
+                    <p class="textsimple"><i class="fas fa-fax"></i>+39 011-95.72.502</p>
+                </div>
+                <div class="col-12 col-md-4 mb-4 boxone">
+                    <p>Amministrazione</p>
+                    <p class="textsimple"><i class="fas fa-envelope"></i> administration@elinditaly.com</p>
+                    <br><br>
+                    <p>Ufficio Commerciale</p>
+                    <p class="textsimple"><i class="fas fa-envelope"></i> sales@elinditaly.com</p><br><br>
+                    <p>Assistenza</p>
+                    <p class="textsimple"><i class="fas fa-envelope"></i> aftersales@elinditaly.com</p>
+                </div>
+                <div class="col-12 col-md-4 text-center mb-4 boxone">
+                    <a href="index.html">Home</a>
+                    <a href="progettazione.html">Progettazione</a>
+                    <a href="produzione.html">Produzione</a>
+                    <a href="assistenza.html">Assistenza</a>
+                    <a href="lavoraconnoi.html">Lavora con Noi</a>
+                    <a href="news.html">News</a>
+                    <a href="contatti.html">Contatti</a>
+                </div>
+            </div>
+        </div>
+
+        <!--
+<div class="text-center mt-4">
+&copy; copyright 2024 by <a href="https://www.pixelpro.cloud" target="_blank" class="text-primary">pixelpro</a> | all rights reserved!
+</div>
+-->
+    </section>
+    
+    <script src="script.js"></script>
+
+    <!-- Includi jQuery (necessario per alcune funzionalità di Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Includi Popper.js (necessario per alcune funzionalità di Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <!-- Includi il file JavaScript di Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
